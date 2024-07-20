@@ -1,0 +1,19 @@
+@import 'src/assets/layout/styles/scss/_mixins.scss';
+.main-container {
+    .headings-container {
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+    .container {
+        width: 50%;
+        min-height: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .details {
+        display: flex;
+        justify-content: center;
+    }
+}

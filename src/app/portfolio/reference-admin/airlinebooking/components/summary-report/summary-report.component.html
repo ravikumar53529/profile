@@ -1,0 +1,9 @@
+<div class="container" *ngIf="displayData">
+    <div>
+        <h5 class="user-list m-0">Summary Report</h5>
+    </div>
+    <app-customizabletable
+        [customizableHeaders]="summaryReportsHeaders"
+    ></app-customizabletable>
+</div>
+

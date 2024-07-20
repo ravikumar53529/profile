@@ -1,0 +1,85 @@
+@import 'src/assets/layout/styles/theme/theme-light/mytheme/theme.scss';
+
+.consolidated-main-container {
+    .editable-screens-container {
+        padding: 10px 0px;
+        .details{
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 10px;
+            span{
+                font-weight: bold;
+            }
+        }
+        .screens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8%;
+
+            .content {
+                width: 23.5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $primaryColor;
+                border-radius: 10px;
+                padding: 12px;
+                color: $primary;
+                font-weight: 500;
+                margin-bottom: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                .icon {
+                    font-size: 20px;
+                }
+            }
+
+            .content:hover {
+                background-color: gray;
+                color: white;
+            }
+        }
+    }
+
+    .consolidated-view {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+
+        .card {
+            width: 19%;
+            height: 120px;
+            color: white;
+
+            .img {
+                background-repeat: no-repeat;
+            }
+        }
+
+        .card:hover {
+            animation: colorChange 3s infinite;
+            cursor: pointer;
+            color: #FFFFFF;
+        }
+    }
+
+    .back-buttons-section {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    @keyframes colorChange {
+        0% {
+            background-color: initial;
+        }
+
+        50% {
+            background-color: $primaryColor;
+        }
+
+        100% {
+            background-color: initial;
+        }
+    }
+}

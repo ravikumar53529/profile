@@ -1,0 +1,8 @@
+<div class="container" *ngIf="data">
+    <div>
+        <h5 class="user-list m-0">Airline Summary Report</h5>
+    </div>
+    <app-customizabletable
+        [customizableHeaders]="airlinesSummaryHeaders"
+    ></app-customizabletable>
+</div>

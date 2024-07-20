@@ -1,0 +1,8 @@
+<div class="container" *ngIf="displayData">
+    <div>
+        <h5 class="user-list m-0">PG Wise Detail Summary</h5>
+    </div>
+    <app-customizabletable
+        [customizableHeaders]="pgWiseDetailReportHeaders"
+    ></app-customizabletable>
+</div>

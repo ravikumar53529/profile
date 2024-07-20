@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CalendarModule } from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CalendarModule,
+    FormsModule,
+    ButtonModule,
+    PortfolioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

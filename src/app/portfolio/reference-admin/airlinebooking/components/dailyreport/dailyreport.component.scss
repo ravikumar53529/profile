@@ -1,0 +1,21 @@
+@import 'src/assets/layout/styles/theme/theme-light/mytheme/theme.scss';
+.main-container{
+    .container{
+        .buttons-right{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .card{   
+            .table-heading{
+                font-weight:700;
+                color: pur;
+            }
+            .transaction-column {
+                color: blue;
+                text-decoration: none;
+            }
+
+        }
+    }  
+}

@@ -1,0 +1,41 @@
+<div class="consolidated-main-container">
+    <div class="editable-screens-container">
+         <div class="details"> 
+              <span>Transaction ID:</span>{{transactionId}}
+         </div>
+         <div class="screens">
+              <div class="content">
+               <span>Update Ticket Number</span>
+               <i class="pi pi-ticket icon"></i>
+              </div>
+              <div class="content">
+               <span>Update Transaction Details</span>
+               <i class="pi pi-money-bill icon"></i>
+              </div>
+              <div class="content">
+               <span> Change Cancellation Details</span>
+               <i class="pi pi-times-circle icon"></i>
+              </div>
+              <div class="content">
+               <span>Offline cancellation requests</span>
+               <i class="pi pi-times icon"></i>
+              </div>
+              <div class="content">
+               <span> Update cancellation amount</span>
+               <i class="pi pi-briefcase icon"></i>
+              </div>
+         </div>
+    </div>
+   <div class="consolidated-view">
+        <div class="card"  tabindex="0"  *ngFor="let data of consolidatedBlocks" (keyup.enter)="goToDetailedPage(data.parameter)" (click)="goToDetailedPage(data.parameter)"  [style]="{'background-color':data.background}">
+         <h5>{{data.title}}</h5>
+         <div [class]="data.imagecontainer" >
+              <i [class]="data.icon" style="font-size: 2rem"></i>
+         </div>
+        </div>
+   </div>
+<div class="back-buttons-section">
+<button pButton (click)="backToConsolidated()">Back</button>
+</div>
+</div>
+

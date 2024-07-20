@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="grid" *ngFor="let bookings of bookingsData">
+        <div class="col-3">
+            <div
+                class="card"
+                style="
+                    background-color: #d6b900;
+                    color: white;
+                    padding: 20px 8px;
+                "
+            >
+                <h5 class="title_header">Total Bookings</h5>
+                <div class="row">
+                    <div class="col-8">
+                        <h1>{{ bookings.total }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div
+                class="card"
+                style="
+                    background-color: #4b49ac;
+                    color: white;
+                    padding: 20px 8px;
+                "
+            >
+                <h5 class="title_header">Total Bookings Approved</h5>
+                <div class="row">
+                    <div class="col-8">
+                        <h1>{{ bookings.approved }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div
+                class="card"
+                style="
+                    background-color: #7978e9;
+                    color: white;
+                    padding: 20px 8px;
+                "
+            >
+                <h5 class="title_header">Total Pending Bookings</h5>
+                <div class="row">
+                    <div class="col-8">
+                        <h1>{{ bookings.pending }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div
+                class="card"
+                style="
+                    background-color: #f3797e;
+                    color: white;
+                    padding: 20px 8px;
+                "
+            >
+                <h5 class="title_header">Total Cancelled Bookings</h5>
+                <div class="row">
+                    <div class="col-8">
+                        <h1>{{ bookings.cancelled }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="graps-container">
+        <div class="grid">
+            <div class="col-6">
+                <div class="shadow-5 p-3">
+                    <h5 class="text-center user-list">Airlines</h5>
+                    <p-chart
+                        type="line"
+                        [data]="lineData"
+                        [options]="lineOptions"
+                    ></p-chart>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="shadow-5 p-3">
+                    <h5 class="text-center user-list">Bookings</h5>
+                    <p-chart
+                        type="bar"
+                        [data]="lineData2"
+                        [options]="lineOptions"
+                    ></p-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
