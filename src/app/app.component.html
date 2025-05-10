@@ -25,16 +25,17 @@
       </ul>
     </div>
     <div class="buttons">
-      <button>Resume</button>
+      <button class="cursor-pointer" (click)="downloadResume()">Resume</button>
+
       <button>Hire Me</button>
     </div>
   </nav>
 
   <div class="title">
     <div class="sec">
-      <h1>Hi,I'm Ravikumar</h1>
-      <p>Software Developer</p>
-      <div class="logo">
+      <h1 class="animated-heading">Hi,I'm Ravikumar</h1>
+      <p class="animated-heading">Software Developer</p>
+      <div class="logo animated-heading">
         <img
           src="https://cdn.iconscout.com/icon/premium/png-256-thumb/down-arrow-1480597-1253424.png"
           alt=""
@@ -52,13 +53,14 @@
       <div class="content">
         <div class="content-main">
           <p class="mb-5">
-            I am Ravikumar Galinki, a Front-End Developer with 2 years of
-            experience in creating dynamic web applications. Throughout my
-            career, I have gained expertise in various technologies, including
-            HTML5, CSS3, JavaScript, TypeScript, Angular, Angular Material,
-            PrimeFlex, PrimeNG, Bootstrap, Tailwind CSS, Git, GitHub, and Python
-            programming. I also possess automation skills that enhance my
-            development process.
+            I am an experienced Angular Developer with over two years of
+            hands-on experience in building scalable and high-performance web
+            applications. My expertise lies in Angular, TypeScript, and modern
+            JavaScript framework, enabling me to create intuitive and responsive
+            user interfaces. I am dedicated to continuous learning to stay
+            aligned with the latest front-end technologies and trends. My focus
+            is on optimizing performance and delivering robust, user-centric
+            solutions that enhance overall user satisfaction.
           </p>
           <p>
             I hold an M.Tech in Communications and Signal Processing, which has
@@ -68,7 +70,7 @@
           </p>
         </div>
         <div class="content-image">
-          <img src="/assets/ravi.jpeg" alt=""  width="100%" height="80%" />
+          <img src="/assets/ravi.jpeg" alt="" width="100%" height="80%" />
         </div>
       </div>
     </div>
@@ -302,19 +304,27 @@
             <div class="col-6 p-3">
               <h4 class="mb-3">Learning Management System</h4>
               <p>
-                The Learning Management System (LMS) allows users to browse and access various courses. In this project, I primarily focused on developing the chat module, profile management, and about sections. Key aspects of my contribution include:
+                The Learning Management System (LMS) allows users to browse and
+                access various courses. In this project, I primarily focused on
+                developing the chat module, profile management, and about
+                sections. Key aspects of my contribution include:
               </p>
               <p>
                 <span class="font-bold line-height-4">Chat Module: </span>
-                Implemented a real-time chat feature to facilitate communication between users.
+                Implemented a real-time chat feature to facilitate communication
+                between users.
               </p>
               <p>
-                <span class="font-bold line-height-4">Profile Management: </span>
-                Developed the functionality for users to manage and update their profiles.
+                <span class="font-bold line-height-4"
+                  >Profile Management:
+                </span>
+                Developed the functionality for users to manage and update their
+                profiles.
               </p>
               <p>
                 <span class="font-bold line-height-4">About Section: </span>
-                Created and maintained the about section to provide relevant information.
+                Created and maintained the about section to provide relevant
+                information.
               </p>
             </div>
           </div>
@@ -376,9 +386,44 @@
   <section id="contact">
     <footer>
       <h3 class="mb-3">Contact</h3>
-      <h5 class="mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ut.
-      </h5>
+      <div class="grid mb-3">
+        <div class="col-6">
+          <div class="grid mb-2">
+            <div class="col-2">
+              <h5>Phone:</h5>
+            </div>
+            <div class="col-4">
+              <h5>+91-9441153529</h5>
+            </div>
+          </div>
+          <div class="grid mb-2">
+            <div class="col-2">
+               <h5>Email:</h5>
+            </div>
+            <div class="col-4">
+              <h5>galinki.ravi33.com</h5>
+            </div>
+          </div>
+        </div>
+         <div class="col-6">
+          <div class="grid mb-2">
+            <div class="col-2">
+              <h5>Phone:</h5>
+            </div>
+            <div class="col-4">
+              <h5>+91-9441153529</h5>
+            </div>
+          </div>
+          <div class="grid mb-2">
+            <div class="col-2">
+               <h5>Email:</h5>
+            </div>
+            <div class="col-4">
+              <h5>galinki.ravi33.com</h5>
+            </div>
+          </div>
+        </div>
+      </div>
       <button class="p-1 button">Write Message</button>
     </footer>
   </section>
