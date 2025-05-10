@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
-import { PortfolioModule } from './portfolio/portfolio.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     CalendarModule,
     FormsModule,
     ButtonModule,
-    PortfolioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
